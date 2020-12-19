@@ -29,17 +29,6 @@ const makeTransaction = (transaction) => {
   })
   
 };
-// makeTransaction({ id: 70, amount: 150 }).then(delay => delay)
-//   .then(delay => console.log(delay))
-
-//   makeTransaction({ id: 71, amount: 150 }).then(delay => delay)
-//   .then(delay => console.log(delay))
-
-//   makeTransaction({ id: 72, amount: 150 }).then(delay => delay)
-//   .then(delay => console.log(delay))
-
-//   makeTransaction({ id: 73, amount: 150 }).then(delay => delay)
-// .then(delay => console.log(delay))
 
 const logSuccess = ({id, time }) => {
   console.log(`Transaction ${id} processed in ${time}ms`);
@@ -65,8 +54,3 @@ makeTransaction({ id: 73, amount: 100 })
   .then(logSuccess)
   .catch(logError);
 
-
-//    function logger(time) {
-//     console.log(`Лог каждые ${time}ms. - ${Date.now()}`)
-// }
-// const intervalId = setInterval(logger, 1000, 1000);
