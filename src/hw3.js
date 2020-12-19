@@ -19,10 +19,8 @@ const makeTransaction = (transaction) => {
       if (canProcess) {
         const data = ({ id:transaction.id, time:delay })
        resolve(data)
-      }else {
-        reject(transaction.id);
       }
-   
+        reject(transaction.id);
 
     }, delay);
     
